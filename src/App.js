@@ -23,6 +23,7 @@ function App() {
 
     console.log(response);
 
+    
     // copia todos os campos existentes dentro de field + os campos que voltam da api
     setfield({...field, rua:response.data.logradouro,comp:response.data.complemento,cidade:response.data.localidade,
     estado:response.data.uf, bairro: response.data.bairro})
