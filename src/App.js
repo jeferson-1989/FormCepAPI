@@ -31,14 +31,15 @@ function App() {
   return (
     <div className="App">
       <form onSubmit={handleSubmit}>
-        <label>Nome Completo <input name="name" onChange={handleChange} type="text" /></label>
-        <label>CPF <input name="CPF" onChange={handleChange} type="text" /></label>
-        <label>E-mail <input name="email" onChange={handleChange} type="text" /></label>
+          <label>Nome Completo <input name="name" onChange={handleChange} type="text" /></label>
+          <label>CPF <input name="CPF" onChange={handleChange} type="text" /></label> 
+          <label>E-mail <input name="email" onChange={handleChange} type="text" /></label>
         <div>
           <h2>Endereco</h2><label> Cep <input value={field.cep || ""} onBlur={handlecep} name="cep" onChange={handleChange} type="text" /></label><br></br>
           <label>Rua <input value={field.rua || ""} name="rua" onChange={handleChange} type="text" /></label><br></br>
           <label>Numero <input value={field.num || ""} name="num" onChange={handleChange} type="text"/></label><br></br>
-          <label>Complemento <input value={field.comp || ""} name="comp" onChange={handleChange} type="text"/></label><br></br>
+          <label>Complemento <input value={field.comp || ""} name="comp" 
+          onChange={handleChange} type="text"/></label><br></br>
           <label>Bairro<input value={field.bairro || ""} name="bairro" onChange={handleChange} type="text"/></label><br></br>
           <label>Cidade<input value={field.cidade  || ""} name="cidade" onChange={handleChange} type="text"/></label><br></br>
           <label>Estado <input value={field.estado || ""} name="estado"onChange={handleChange} type="text"/></label><br></br>
